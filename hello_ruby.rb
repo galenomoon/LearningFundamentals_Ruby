@@ -121,8 +121,49 @@ num = gets.chomp.to_i
 (0...num).each do |i|
     puts "Value: #{i}"
 end
+# -- ARRAYS --
+
+v = [1,8,2,9,0,5,3,6,4]
+
+# [LISTA].each CRIE |{VARIABLE}|
+v.each do |item|
+    puts "Number: #{item}"
+end
+
+v1 = []
+v1.push("Lua")
+v1.push("Galeno")
+
+v1.each do |item|
+    puts "Name: #{item}"
+end
+# -- Hashes --
+
+moonfriend = {"name"=> "Luana", "age"=> 19 } 
+best_friend = {"name"=> "Gusta", "age"=> 18 } 
+sister = {"name"=> "Isa", "age"=> 13 }
+
+puts "Read more about..."
+puts "1) Girlfriend"
+puts "2) Best Friend"
+puts "3) Sister"
+print "Type a number to choose an option: "
+resp = gets.chomp.to_i
+puts "------------------------------"
+
+case resp
+when 1
+    puts "Girlfriend: #{moonfriend}"
+when 2
+    puts "Best Friend: #{best_friend}"
+when 3
+    puts "Sister: #{sister}"
+else
+    puts "????"
+end
+
+
 =end
-
-
 =begin 
+
 =end
